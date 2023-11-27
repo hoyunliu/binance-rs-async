@@ -362,6 +362,7 @@ pub struct Tickers {
 #[serde(rename_all = "camelCase")]
 pub struct TradeHistory {
     pub id: u64,
+    pub order_id: u64,
     #[serde(with = "string_or_float")]
     pub price: f64,
     #[serde(with = "string_or_float")]
